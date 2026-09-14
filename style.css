@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080808;
+    color: white;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(8, 8, 8, 0.9);
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+header span,
+.hero span {
+    color: #ff3030;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff3030;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 10%;
+    background:
+            radial-gradient(circle at 80% 50%, #4b1010 0%, transparent 35%),
+            #080808;
+}
+
+.small {
+    color: #ff3030;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: clamp(45px, 8vw, 90px);
+    line-height: 0.95;
+}
+
+.description {
+    max-width: 550px;
+    margin: 30px 0;
+    color: #aaa;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+button {
+    padding: 15px 30px;
+    border: none;
+    background: #ff3030;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    background: #ff5050;
+    box-shadow: 0 10px 30px rgba(255, 48, 48, 0.3);
+}
+
+.stats,
+.contact {
+    min-height: 60vh;
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.stats h2,
+.contact h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 220px;
+    padding: 40px 20px;
+    background: #111;
+    border: 1px solid #292929;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #ff3030;
+}
+
+.card h3 {
+    font-size: 45px;
+    color: #ff3030;
+}
+
+.card p {
+    margin-top: 10px;
+    color: #999;
+}
+
+.contact {
+    background: #0d0d0d;
+}
+
+.contact p {
+    color: #aaa;
+    margin-bottom: 25px;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    color: #555;
+    background: #050505;
+}
+
+@media (max-width: 700px) {
+    header {
+        padding: 15px 5%;
+    }
+
+    nav a {
+        margin-left: 10px;
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 120px 7%;
+    }
+
+    .hero h2 {
+        font-size: 50px;
+    }
+}.discord-button {
+     display: inline-block;
+     margin-top: 20px;
+     padding: 15px 30px;
+     background: #5865F2;
+     color: white;
+     text-decoration: none;
+     font-weight: bold;
+     border-radius: 8px;
+     transition: 0.3s;
+ }
+
+.discord-button:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}/* MINI-JEUX */
+
+.games {
+    min-height: 80vh;
+    padding: 100px 10%;
+    text-align: center;
+    background: #080808;
+}
+
+.games h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.game-card {
+    max-width: 700px;
+    margin: auto;
+    padding: 30px;
+    background: #111;
+    border: 1px solid #292929;
+}
+
+.game-card h3 {
+    margin-bottom: 15px;
+}
+
+.game-card p {
+    color: #aaa;
+    margin: 10px;
+}
+
+#gameArea {
+    position: relative;
+    height: 350px;
+    margin: 25px 0;
+    background: #050505;
+    border: 1px solid #333;
+    overflow: hidden;
+}
+
+/* La cible */
+
+#target {
+    display: none;
+    position: absolute;
+    padding: 15px;
+    border-radius: 50%;
+    background: #ff3030;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 0 0 25px rgba(255, 48, 48, 0.7);
+    animation: pulse 0.8s infinite alternate;
+}
+
+/* Animation de la cible */
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
+
+/* Animation des cartes */
+
+.card,
+.game-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover,
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(255, 48, 48, 0.15);
+}#scoreList {
+     margin-top: 20px;
+     list-style-position: inside;
+ }
+
+#scoreList li {
+    margin: 8px;
+    color: #ff3030;
+    font-size: 18px;
+}
