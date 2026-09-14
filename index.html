@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noctyx 340</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+    <h1>NOCTYX <span>340</span></h1>
+
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#stats">Stats</a>
+        <a href="#jeux">Mini-jeux</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <section id="accueil" class="hero">
+        <div>
+            <p class="small">PLAYER PROFILE</p>
+            <h2>WELCOME TO<br><span>NOCTYX 340</span></h2>
+            <p class="description">
+                Bienvenue sur mon espace gaming.
+                Découvre mes statistiques, mes jeux et mon profil.
+            </p>
+
+            <button id="startButton">ENTRER DANS LE PROFIL</button>
+        </div>
+    </section>
+
+    <section id="stats" class="stats">
+        <h2>MES STATS</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>1.84</h3>
+                <p>K/D</p>
+            </div>
+
+            <div class="card">
+                <h3>247</h3>
+                <p>VICTOIRES</p>
+            </div>
+
+            <div class="card">
+                <h3>2 340</h3>
+                <p>ÉLIMINATIONS</p>
+            </div>
+        </div>
+    </section>
+    <section id="jeux" class="games">
+        <h2>MINI-JEUX</h2>
+
+        <div class="game-card">
+            <h3>🎯 TEST DE RÉFLEXE</h3>
+            <p>Clique sur la cible le plus rapidement possible !</p>
+
+            <div id="gameArea">
+                <button id="target">🎯</button>
+            </div>
+
+            <p>Temps : <span id="time">0</span> ms</p>
+            <p>Meilleur score : <span id="best">--</span> ms</p>
+            <h3>🏆 Meilleurs scores</h3>
+
+            <ol id="scoreList">
+                <li>---</li>
+            </ol>
+            <button id="startGame">COMMENCER</button>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>CONTACT</h2>
+        <p>Tu veux me contacter ?</p>
+        <a href="https://discord.gg/7fzBBYVhB" target="_blank">
+            <button>Rejoin mon discord!</button>
+        </a>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 NOCTYX 340</p>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>
